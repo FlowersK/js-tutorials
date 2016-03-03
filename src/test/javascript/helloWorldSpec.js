@@ -24,6 +24,16 @@ describe("pythagorean theorem", function(){
         var a = 4, b = 3 , expectedResult = 0 ;
         expect(pTheorem( a , b )).toBeGreaterThan(expectedResult)
     });
+    it("can tell if A and B are NaN",function(){
+        var a = "Yo Whats UP", b = [cheese = 3, toes = 5];
+        var expectedResult = "Missing Value or Invalid Input";
+        try {
+            pTheorem(a , b);
+        } catch(err){
+            expect((err)).toEqual(expectedResult) ;
+        }
+        //expect(pTheorem(a , b)).toThrowError(expectedResult);
+    });
 });
 
 /* TODO = finish writing the test for the pythagorean theorem and push code to GIT. */

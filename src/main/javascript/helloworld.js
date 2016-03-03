@@ -11,19 +11,18 @@ function numSum ( x , y ) {
 
 function pTheorem( a , b ){
     if(a <= 0) {
-        throw "Invalid Input"
+        throw "Invalid Input";
     }
     else if(b <= 0){
-        throw "Invalid Input"
+        throw "Invalid Input";
     }
-    else if(a = NaN){
-        throw "Missing Value"
+    else if(isNaN(a)){
+        throw "Missing Value or Invalid Input";
     }
-    else if(b = NaN){
-        throw "Missing Value"
+    else if(isNaN(b)){
+        throw "Missing Value or Invalid Input";
     }
     var missingSide = (a * a) + (b * b);
     var answer = Math.sqrt(missingSide);
     return answer;
-
 };
