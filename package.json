@@ -4,13 +4,17 @@
   "description": "javascript tutorial",
   "dependencies": {},
   "devDependencies": {
+    "http-server": "^0.9.0",
     "jasmine": "^2.4.1",
     "karma": "^0.13.21",
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.7"
   },
   "scripts": {
-    "test": "karma start karma.conf.js"
+    "postinstall": "bower install",
+    "prestart ": "npm install",
+    "test": "karma start karma.conf.js",
+    "start": "http-server -a localhost -p 8000 -c-1"
   },
   "author": "Kenneth",
   "license": "ISC"
