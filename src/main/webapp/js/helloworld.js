@@ -9,6 +9,21 @@ function numSum ( x , y ) {
     return x + y;
 };
 
+function numSub ( x , y ) {
+    return x - y;
+};
+
+function numMul ( x , y ){
+    return x * y;
+};
+
+function numDivid (x , y ) {
+    if( y= 0){
+        throw "This is not possible.";
+    }
+    return x / y;
+};
+
 function pTheorem( a , b ){
     if(a <= 0) {
         throw "Invalid Input";
